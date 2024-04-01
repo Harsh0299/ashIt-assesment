@@ -1,0 +1,63 @@
+.slick-dots li button::before {
+    display: none;
+}
+
+.slick-dots {
+    margin-top: 30px;
+    position: relative;
+    bottom: 0
+}
+
+.slick-dots li button {
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: #bfbfbf;
+    margin: auto;
+}
+
+.slick-dots .slick-active button {
+    background-color: var(--primary-color);
+}
+.property-card {
+    font-size: 1.4rem;
+}
+
+.property-card--img {
+    position: relative;
+    margin: -19px;
+    border-radius: 8px;
+    min-height: 350px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 20px;
+}
+
+.property-card--icon {
+    padding: 6px;
+    border-radius: 6px;
+    background-color: #bfbfbf80;
+    color: var(--primary-color);
+    font-size: 1.2rem;
+    width: 20px;
+    height: 20px;
+}
+
+.property-card--title {
+    margin-top: 20px;
+}
+
+.property-card--desc {
+    margin-top: -12px;
+    color: var(--primary-color);
+    font-weight: 500;
+}
+
+.property-card--details {
+    margin-top: -12px;
+}
+
+.property-card--developer {
+    font-size: 1.2rem;
+}

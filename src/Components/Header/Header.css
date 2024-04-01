@@ -1,3 +1,83 @@
 .header {
-    padding: 20px;
+    padding: 10px 0 10px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    transition: all 300ms linear;
+    z-index: 512;
+}
+
+.user-icon,
+.hamburger-icon {
+    font-size: 2.1rem;
+    color: #fff;
+}
+
+.nav-conatiner>button {
+    display: none
+}
+
+.nav {
+    transition: all 1000ms ease-in-out;
+}
+
+.mobile-nav--side-header-icon, .cross-icon {
+    display: none;
+}
+
+@media screen and (max-width: 1220px) {
+    .nav-conatiner {
+        position: relative;
+    }
+
+    .nav-conatiner>button {
+        display: block;
+    }
+
+    .nav {
+        visibility: hidden;
+        position: fixed;
+        top: 0;
+        bottom: 0;
+        background-color: #fff;
+        width: 600px;
+        max-width: 100%;
+        right: -600px;
+        z-index: 513;
+        padding-top: 90px;
+    }
+
+    .mobile-nav--show {
+        visibility: visible;
+        right: 0;
+    }
+
+    .user-icon {
+        color: var(--primary-color);
+        font-size: 1.6rem;
+    }
+
+    .cross-icon {
+        display: block;
+    }
+
+    ul li:has(.cross-icon) {
+        position: absolute;
+        top: 30px;
+        right: 30px;
+    }
+}
+
+@media screen and (max-width: 625px) {
+    .nav ul {
+        padding: 15px;
+    }
+
+    .mobile-nav--side-header-icon {
+        display: block;
+        position: absolute;
+        top: 30px;
+        left: 30px;
+    }
 }

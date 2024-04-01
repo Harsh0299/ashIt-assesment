@@ -21,6 +21,7 @@ const FlexLayout: React.FC<FlexLayoutI> = ({
   tabWidth = "",
   desktopWidth = "",
   mobileWidth = "",
+  gap
 }: FlexLayoutI) => {
   const getClassForVAlign = (valign: string) => {
     switch (valign) {
@@ -325,7 +326,10 @@ const FlexLayout: React.FC<FlexLayoutI> = ({
 
   return (
     <div
-      className={`d-flex ${Wrap} ${WrapTab} ${WrapMob} ${VAlign} ${VAlignTab} ${VAlignMob}  ${HAlign} ${HAlignTab} ${HAlignMob} ${Spacing} ${Direction} ${DirectionTab} ${DirectionMob}   ${Fill}  ${Dwidth} ${Twidth} ${Mwidth}`.trim()}
+      style={{
+        ...gap ? { gap } : {}
+      }}
+      className={`d-flex ${Wrap} ${WrapTab} ${WrapMob} ${VAlign} ${VAlignTab} ${VAlignMob}  ${HAlign} ${HAlignTab} ${HAlignMob} ${Spacing} ${Direction} ${DirectionTab} ${DirectionMob} ${Fill} ${Dwidth} ${Twidth} ${Mwidth}`.trim()}
     >
       {newChildrens}
     </div>
@@ -338,29 +342,29 @@ export interface FlexLayoutI {
   valignMob?: "start" | "center" | "end" | "stretch" | "baseline" | "none";
   halign?: "start" | "center" | "end" | "fill" | "around" | "evenly" | "none";
   halignTab?:
-    | "start"
-    | "center"
-    | "end"
-    | "fill"
-    | "around"
-    | "evenly"
-    | "none";
+  | "start"
+  | "center"
+  | "end"
+  | "fill"
+  | "around"
+  | "evenly"
+  | "none";
   halignMob?:
-    | "start"
-    | "center"
-    | "end"
-    | "fill"
-    | "around"
-    | "evenly"
-    | "none";
+  | "start"
+  | "center"
+  | "end"
+  | "fill"
+  | "around"
+  | "evenly"
+  | "none";
   spacing?:
-    | "none"
-    | "tight"
-    | "mediumTight"
-    | "extraTight"
-    | "loose"
-    | "mediumLoose"
-    | "extraLoose";
+  | "none"
+  | "tight"
+  | "mediumTight"
+  | "extraTight"
+  | "loose"
+  | "mediumLoose"
+  | "extraLoose";
   direction?: "vertical" | "vertical-reverse" | "row-reverse" | "none";
   directionTab?: "vertical" | "vertical-reverse" | "row-reverse" | "none";
   directionMob?: "vertical" | "vertical-reverse" | "row-reverse" | "none";
@@ -372,6 +376,7 @@ export interface FlexLayoutI {
   mobileWidth?: "100" | "80" | "75" | "66" | "50" | "33" | "25" | "20" | "";
   tabWidth?: "100" | "80" | "75" | "66" | "50" | "33" | "25" | "20" | "";
   desktopWidth?: "100" | "80" | "75" | "66" | "50" | "33" | "25" | "20" | "";
+  gap?: number;
 }
 
 export default FlexLayout;

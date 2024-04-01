@@ -5,6 +5,7 @@ const Button = ({
     type,
     thickness = "thin",
     halign = "Center",
+    noHover = false,
     ...props
 }: ButtonI): JSX.Element => {
     const checkType = (): string => {
@@ -12,6 +13,7 @@ const Button = ({
             case "Primary":
                 return "inte-btn--Primary";
             case "Plain":
+                if (noHover) return "inte__plain-btn inte__plain-btn--noHover"
                 return "inte__plain-btn";
             default:
                 return "inte-btn--Primary";
@@ -104,5 +106,6 @@ export interface ButtonI {
     iconAlign?: "left" | "right";
     iconRound?: boolean;
     tabIndex?: number;
+    noHover?: boolean
 }
 export default Button;

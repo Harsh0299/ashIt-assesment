@@ -25,6 +25,7 @@
 .d-flex__item.d-flex--fill {
   flex: 1 !important;
   min-width: 0 !important;
+  max-width: 100%;
 }
 
 .d-flex--vertical {

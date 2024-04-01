@@ -1,0 +1,36 @@
+.top-property-card {
+    background-color: #dfdfdf;
+}
+
+.top-property--img{
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+
+.top-property--content {
+    padding: 20px;
+}
+
+.top-property--title {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.top-property--p1 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+}
+
+.top-property--p2 {
+    font-size: 1.5rem;
+    color: var(--primary-color);
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.top-property--p3 {
+    font-size: 1.5rem;
+    margin-bottom: 150px;
+}

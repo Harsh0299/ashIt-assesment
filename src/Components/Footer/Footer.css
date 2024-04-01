@@ -1,0 +1,65 @@
+.footer {
+    background-color: var(--primary-color);
+    margin: 120px 0 0;
+    padding: 60px 0;
+    color: var(--text-light);
+}
+
+.footer-socials img {
+    -webkit-filter: brightness(0) invert(1);
+    filter: brightness(0) invert(1);
+}
+
+.footer-social--follow {
+    margin-top: 20px;
+    font-size: 1.6rem;
+}
+
+.footer-social--follow ul {
+    padding: 0;
+    margin: 10px 0 20px;
+}
+
+.footer-social--contacts p {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin: 8px 0;
+}
+
+.footer-company ul {
+    padding: 0;
+}
+
+.footer-company p {
+    font-size: 1.6rem;
+    margin: 15px 0;
+}
+
+.footer-newsletter{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    font-size: 1.5rem;
+}
+
+.footer-newsletter input {
+    padding: 10px;
+    font-size: 1.4rem;
+    outline: none;
+    border: none;
+    width: 70%;
+    background-color: #dfdfdf;
+}
+
+.footer-newsletter button {
+    padding: 15px;
+    outline: none;
+    border: none;
+    width: 50%;
+    box-shadow: 0 1px 1px rgba(0,0,0,0.08), 0 2px 2px rgba(0,0,0,0.12), 0 4px 4px rgba(0,0,0,0.16), 0 8px 8px rgba(0,0,0,0.20);
+}
+
+.footer-newsletter button span {
+    color: var(--primary-color);
+}

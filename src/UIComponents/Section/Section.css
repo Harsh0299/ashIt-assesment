@@ -1,0 +1,20 @@
+.section {
+    padding: 80px 0 40px;
+    text-align: center;
+}
+
+.section-header {
+    color: var(--primary-color);
+    font-size: 50px;
+    font-weight: 600;
+    max-width: 1290px;
+    margin: 0 auto;
+}
+
+.section-para {
+    color: var(--text-gray);
+    font-size: 26px;
+    line-height: 30px;
+    max-width: 1290px;
+    margin: 0 auto;
+}

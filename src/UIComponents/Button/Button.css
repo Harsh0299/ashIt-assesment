@@ -40,11 +40,11 @@
 }
 
 .inte-btnExtraNarrow {
-  padding: 0.2rem 0.6rem !important;
+  padding: 0.6rem 1rem !important;
 }
 
 .inte-btnExtraNarrow .inte__text {
-  font-size: 1.3rem !important;
+  font-size: 1rem !important;
   line-height: 1.4 !important;
 }
 
@@ -61,7 +61,7 @@
 
 .inte-btn .inte__text {
   font-weight: var(--weight-bold);
-  font-size: 1.6rem;
+  font-size: 1.4rem;
   line-height: 2rem;
   color: inherit;
 }
@@ -87,15 +87,21 @@
   color: var(--btn-primary-bg);
   font-size: 1.4rem;
   padding: 0.4rem 1.2rem;
-  background-color: var(--btn-primary-text);
+  background-color: transparent;
   border-radius: 8px;
 }
 
 .inte__plain-btn:hover,
-.inte__plain-btn:focus, 
+.inte__plain-btn:focus,
 .inte__plain-btn:active {
   background-color: var(--btn-primary-bg);
   color: var(--btn-primary-text);
+}
+
+.inte__plain-btn--noHover:hover,
+.inte__plain-btn--noHover:active,
+.inte__plain-btn--noHover:focus {
+  background-color: transparent;
 }
 
 /* Text Buttonr color Declarations */
@@ -104,14 +110,17 @@
   color: var(--inte-B80);
   min-height: unset;
 }
+
 .inte-btn.inte__text-btn .inte__text {
   line-height: unset;
 }
+
 .inte__text-btn:hover,
 .inte__text-btn:focus {
   color: var(--inte-B100);
   text-decoration: underline;
 }
+
 .inte__text-btn:active {
   color: var(--inte-B300);
 }
@@ -137,11 +146,11 @@
   padding: 0;
 }
 
-.inte-btn.inte-btn--hasIcon > .inte-btn__icon + .inte__text {
+.inte-btn.inte-btn--hasIcon>.inte-btn__icon+.inte__text {
   margin-left: 1rem;
 }
 
-.inte-btn.inte-btn--hasIcon > .inte__text + .inte-btn__icon {
+.inte-btn.inte-btn--hasIcon>.inte__text+.inte-btn__icon {
   margin-left: 1rem;
 }
 
@@ -165,6 +174,7 @@
 .inte-btn--decorated {
   border-bottom: 0.1rem solid var(--link-color);
 }
+
 /*Actions end*/
 
 /* DARK THEME */

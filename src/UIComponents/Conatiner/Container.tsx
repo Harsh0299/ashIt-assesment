@@ -1,8 +1,8 @@
 import React, { ReactElement } from 'react'
 
-const Container = ({ children }: { children: ReactElement | ReactElement[] }) => {
+const Container = ({ maxWidth, children }: { maxWidth?: number; children: ReactElement | ReactElement[] }) => {
     return (
-        <div className='container'>{children}</div>
+        <div className='container' style={{ ...maxWidth ? { maxWidth } : {} }}>{children}</div>
     )
 }
 

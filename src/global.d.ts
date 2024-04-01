@@ -5,3 +5,7 @@ declare module '*.png' {
 declare module '*.jpeg' {
     export default '' as string;
 }
+
+declare module '*.jpg' {
+    export default '' as string;
+}

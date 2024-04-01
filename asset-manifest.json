@@ -1,0 +1,25 @@
+{
+  "files": {
+    "main.css": "/ashIt-assesment/static/css/main.e5c260e3.css",
+    "main.js": "/ashIt-assesment/static/js/main.d39e2c74.js",
+    "static/media/img9.jpg": "/ashIt-assesment/static/media/img9.851656f0d24f5a2959b8.jpg",
+    "static/media/img6.jpg": "/ashIt-assesment/static/media/img6.2299ceb09695c1514e53.jpg",
+    "static/media/img1.jpg": "/ashIt-assesment/static/media/img1.cd3dafd326200ca81b1c.jpg",
+    "static/media/profilePic.jpg": "/ashIt-assesment/static/media/profilePic.068f6e986c459e9a9afd.jpg",
+    "static/media/img3.jpg": "/ashIt-assesment/static/media/img3.8a62caaf6f1445ca88bd.jpg",
+    "static/media/img2.jpg": "/ashIt-assesment/static/media/img2.71a24963334a9e6089e2.jpg",
+    "static/media/img8.jpg": "/ashIt-assesment/static/media/img8.ff0871a96968dac94d57.jpg",
+    "static/media/img7.jpg": "/ashIt-assesment/static/media/img7.021cede4b119a5f3a3ad.jpg",
+    "static/media/flatimage.jpg": "/ashIt-assesment/static/media/flatimage.46fded6e3dc36413b126.jpg",
+    "static/media/img5.jpg": "/ashIt-assesment/static/media/img5.cb7091c5a10aa3c2d40d.jpg",
+    "static/media/jpeg-optimizer_Landing page_page-0001.jpg": "/ashIt-assesment/static/media/jpeg-optimizer_Landing page_page-0001.3b285dc7331d16bcfea5.jpg",
+    "static/media/img4.jpg": "/ashIt-assesment/static/media/img4.78eaf5392b925e71a5f7.jpg",
+    "index.html": "/ashIt-assesment/index.html",
+    "main.e5c260e3.css.map": "/ashIt-assesment/static/css/main.e5c260e3.css.map",
+    "main.d39e2c74.js.map": "/ashIt-assesment/static/js/main.d39e2c74.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.e5c260e3.css",
+    "static/js/main.d39e2c74.js"
+  ]
+}
